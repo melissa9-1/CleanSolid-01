@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Una guía práctica para escribir código claro y aplicar los principios SOLID."
+    />
+    <meta name="theme-color" content="#101713" />
+    <title>Clean Code + SOLID | Código que se entiende</title>
+    <script type="module" crossorigin src="/assets/index.42fe4937.js"></script>
+    <link rel="stylesheet" href="/assets/index.e86b9805.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Clean Code y SOLID, inicio">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>clean<span class="brand-accent">solid</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#principios">Principios</a>
+        <a href="#metodo">Método</a>
+        <a href="#recursos">Recursos</a>
+      </nav>
+      <a class="header-cta" href="#principios">Explorar guía <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Una guía para mejores decisiones</p>
+          <h1>Escribe código.<br />Deja <span>claridad.</span></h1>
+          <p class="hero-description">
+            Buen código no es solo código que funciona. Es código que otras personas
+            pueden entender, mantener y mejorar.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#principios">Descubre los principios <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#metodo">Conoce el método <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">✳</span>
+            <p><strong>Menos complejidad.</strong> Más intención en cada línea.</p>
+          </div>
+        </div>
+        <div class="code-card" aria-label="Ejemplo de código claro">
+          <div class="code-card-top">
+            <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span>clean-code.ts</span>
+            <span class="code-label">BUENAS PRÁCTICAS</span>
+          </div>
+          <pre><code><span class="code-muted">01</span>  <span class="code-purple">function</span> <span class="code-green">calcularTotal</span>(
+<span class="code-muted">02</span>    productos: <span class="code-blue">Producto</span>[]
+<span class="code-muted">03</span>  ): <span class="code-blue">number</span> {
+<span class="code-muted">04</span>    <span class="code-purple">return</span> productos
+<span class="code-muted">05</span>      .<span class="code-green">reduce</span>(
+<span class="code-muted">06</span>        (total, producto) =&gt;
+<span class="code-muted">07</span>          total + producto.precio,
+<span class="code-muted">08</span>        <span class="code-orange">0</span>
+<span class="code-muted">09</span>      )
+<span class="code-muted">10</span>  }</code></pre>
+          <div class="code-card-footer">
+            <span><span class="status-dot"></span> Fácil de leer</span>
+            <span>10 líneas, una intención</span>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#principios"><span></span> Desliza para explorar</a>
+      </section>
+
+      <section class="principles section-wrap" id="principios">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / Los fundamentos</p>
+            <h2>Principios para construir<br />con <span>propósito.</span></h2>
+          </div>
+          <p class="section-intro">
+            Ideas sencillas que ayudan a que cada parte del sistema tenga un lugar
+            y una razón de existir.
+          </p>
+        </div>
+        <div class="principle-grid">
+          <article class="principle-card">
+            <span class="card-index">01</span>
+            <span class="card-icon" aria-hidden="true">◉</span>
+            <h3>Responsabilidad única</h3>
+            <p>Un módulo, una razón para cambiar. Mantén cada pieza enfocada en una tarea.</p>
+            <span class="card-tag">S · Single Responsibility</span>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">02</span>
+            <span class="card-icon" aria-hidden="true">↗</span>
+            <h3>Abierto / cerrado</h3>
+            <p>Extiende el comportamiento sin tener que modificar lo que ya funciona.</p>
+            <span class="card-tag">O · Open / Closed</span>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">03</span>
+            <span class="card-icon" aria-hidden="true">⌁</span>
+            <h3>Sustitución de Liskov</h3>
+            <p>Las implementaciones deben cumplir las expectativas de sus abstracciones.</p>
+            <span class="card-tag">L · Liskov Substitution</span>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">04</span>
+            <span class="card-icon" aria-hidden="true">⊞</span>
+            <h3>Segregación de interfaces</h3>
+            <p>Prefiere interfaces pequeñas y específicas antes que contratos demasiado amplios.</p>
+            <span class="card-tag">I · Interface Segregation</span>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">05</span>
+            <span class="card-icon" aria-hidden="true">⇢</span>
+            <h3>Inversión de dependencias</h3>
+            <p>Depende de abstracciones, no de detalles concretos de implementación.</p>
+            <span class="card-tag">D · Dependency Inversion</span>
+          </article>
+          <article class="principle-card principle-card-highlight">
+            <span class="card-index">+</span>
+            <span class="card-icon" aria-hidden="true">✳</span>
+            <h3>Código limpio</h3>
+            <p>Nombres claros, funciones pequeñas y decisiones que se explican por sí mismas.</p>
+            <span class="card-tag">CL · Clean Code</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="method section-wrap" id="metodo">
+        <div class="method-copy">
+          <p class="eyebrow">02 / El método</p>
+          <h2>Pequeños pasos.<br /><span>Mejor diseño.</span></h2>
+          <p class="section-intro">
+            No hace falta reescribir todo. Observa, encuentra una mejora concreta
+            y refactoriza sin cambiar el comportamiento.
+          </p>
+          <a class="text-link" href="#recursos">Ver recursos <span aria-hidden="true">→</span></a>
+        </div>
+        <ol class="method-steps">
+          <li><span>01</span><div><h3>Haz que funcione</h3><p>Entiende el problema y confirma el comportamiento actual.</p></div></li>
+          <li><span>02</span><div><h3>Hazlo claro</h3><p>Mejora nombres, estructura y responsabilidades.</p></div></li>
+          <li><span>03</span><div><h3>Hazlo confiable</h3><p>Prueba el resultado y comparte el aprendizaje.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="resources section-wrap" id="recursos">
+        <div class="resource-banner">
+          <div>
+            <p class="eyebrow">03 / Sigue practicando</p>
+            <h2>El buen diseño se<br />construye <span>practicando.</span></h2>
+            <p>Explora los ejercicios del proyecto y aplica cada principio en código real.</p>
+          </div>
+          <a class="button button-light" href="#inicio">Volver al inicio <span aria-hidden="true">↑</span></a>
+          <span class="banner-decoration" aria-hidden="true">{ }</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>clean<span class="brand-accent">solid</span></span>
+      </a>
+      <p>Hecho para aprender. Diseñado para durar.</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </footer>
+
+    
+  </body>
+</html>
