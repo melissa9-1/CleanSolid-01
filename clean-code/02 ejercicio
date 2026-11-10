@@ -21,9 +21,7 @@
     // Otros ejercicios
     // tiempo inicial
     const startTime = new Date().getTime();
-    //....
-    // 3 doritos después
-    //...
+    
     // Tiempo al final
     const elapsedTime = new Date().getTime() - startTime;
 
