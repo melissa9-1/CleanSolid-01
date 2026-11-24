@@ -1,4 +1,4 @@
-// Hay que agregar la dependencia de axios ```yarn add axios```
+// Hay que agregar la dependencia de axios,  se intalo npm install axios
 import axios from 'axios';
 
 
